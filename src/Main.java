@@ -18,7 +18,6 @@ public class Main {
         } else {
             System.out.println("Вы ввели не число! Повторите попытку.");
         }
-        console.close();
     }
 
     public static void task2() {
@@ -30,7 +29,6 @@ public class Main {
         } else {
             System.out.println("Нет такого имени");
         }
-        console.close();
     }
 
     public static void task3() {
