@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -10,15 +11,17 @@ public class Main {
     public static void task1() {
         Scanner console = new Scanner(System.in);
         System.out.println("Введите число: ");
-        if (console.hasNextInt()) {
-            int number = console.nextInt();
+        if (console.hasNextDouble()) {
+            double number = console.nextDouble();
             if (number > 7) {
                 System.out.println("Привет");
             }
         } else {
             System.out.println("Вы ввели не число! Повторите попытку.");
         }
+
     }
+
 
     public static void task2() {
         Scanner console = new Scanner(System.in);
@@ -29,6 +32,7 @@ public class Main {
         } else {
             System.out.println("Нет такого имени");
         }
+
     }
 
     public static void task3() {
@@ -55,5 +59,19 @@ public class Main {
                 System.out.print(array[i] + " ");
             }
         }
+        /*Scanner console = new Scanner(System.in);
+        ArrayList<Double> array = new ArrayList<Double>();
+        System.out.println("Введите элементы массива: ");
+        for (double i =0; i < ; i++) {
+            Double d = console.nextDouble();
+            array.add(d);
+        }
+
+        for (double i : array) {
+            if (array.get((int) i) % 3 == 0) {
+                System.out.println(array.get((int) i));
+            }
+        }
+        console.close();*/
     }
 }
