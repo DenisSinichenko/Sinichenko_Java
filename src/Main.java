@@ -32,46 +32,37 @@ public class Main {
         } else {
             System.out.println("Нет такого имени");
         }
-
     }
 
     public static void task3() {
-        Scanner console = new Scanner(System.in);
-        int n;
-        System.out.println("Введите размер массива: ");
-        if (console.hasNextInt()) {
-            n = console.nextInt();
-        } else {
-            System.out.println("Вы ввели не число!");
-            return;
-        }
+        /*Scanner console = new Scanner(System.in);
         System.out.println("Введите элементы массива: ");
-        int[] array = new int[n];
-        for (int i = 0; i < n; i++) {
-            if (console.hasNextInt()) {
-                array[i] = console.nextInt();
+        double[] array = new double[5];
+        for (int i = 0; i < 5; i++) {
+            if (console.hasNextDouble()) {
+                array[i] = console.nextDouble();
             }
         }
-        console.close();
         System.out.println("Элементы массива кратные 3:");
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < 5; i++) {
             if (array[i] % 3 == 0) {
                 System.out.print(array[i] + " ");
             }
-        }
-        /*Scanner console = new Scanner(System.in);
-        ArrayList<Double> array = new ArrayList<Double>();
+        }*/
+        ArrayList<Double> array = new ArrayList<>();
+        Scanner console = new Scanner(System.in);
         System.out.println("Введите элементы массива: ");
-        for (double i =0; i < ; i++) {
-            Double d = console.nextDouble();
-            array.add(d);
-        }
-
-        for (double i : array) {
-            if (array.get((int) i) % 3 == 0) {
-                System.out.println(array.get((int) i));
+        for (int i = 0; i < 5; i++) {
+            if (console.hasNextDouble()) {
+                double d = console.nextDouble();
+                array.add(d);
             }
         }
-        console.close();*/
+        System.out.println("Элементы массива кратные 3:");
+        for (int i = 0; i < array.size(); i++) {
+            if (array.get(i) % 3 == 0) {
+                System.out.println(array.get(i) + " ");
+            }
+        }
     }
 }
